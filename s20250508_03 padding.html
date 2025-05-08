@@ -1,0 +1,43 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <title>Margin pratice</title>
+    <style>
+        .box1 {
+            width: 300px;
+            height: 300px;
+            /* margin-top: 20px;
+            margin-bottom: 20px; */
+            background-color: red;
+            padding-left: 100px;  /* 沒有加入box-sizing:border-box 會造成我的保鮮盒變形*/
+            /* margin-top: ; */
+            /* margin-top: ; */
+            border: 5px solid black;
+        }
+        .box2 {
+            width: 300px;
+            height: 300px;
+            margin-top: 40px;
+            /* margin-bottom: 20px; */
+            background-color: green;
+            padding-left: 100px;  /*加入了box-sizing 明顯保鮮盒沒有跑掉*/   
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+    <div class="box1">
+        實驗組:<br>
+        沒有加入box-sizing:border-box 會造成保鮮盒變形
+    </div>
+    <div class="box2">
+        對照組<br>
+        加入了box-sizing 明顯保鮮盒沒有跑掉
+    </div>
+<body>
+
+</body>
+
+</html>

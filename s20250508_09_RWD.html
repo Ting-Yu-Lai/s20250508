@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            width: 100%;
+            height: 10vh;
+            background-color: black;
+            position: fixed;
+            /* display: inline-block; */
+            z-index: 10;
+        }
+
+        .navtext {
+            display: inline-block;
+            /* background-color: rgb(54, 54, 54); */
+            border-radius: 15px;;
+            margin: 10px;
+            height: 30px;
+            width: 21%;
+            text-align: center;
+            padding: 5px;
+            z-index: 10;
+        }
+
+        .navimg {
+            display: inline-block;
+            position: relative;
+            height:40px;
+            width:45px;
+            top:13px;
+            left:20px;
+            object-fit: contain;
+            /* background-color:blue; */
+            /* background-position-x: 10px;
+            background-position-y: 10px; */
+            filter: drop-shadow(1px 3px 6px red);
+        }
+
+        .container1img {
+            position: relative;
+            /* object-fit: contain; */
+            top: 38px;
+            filter: drop-shadow(1px 3px 80px rgb(139, 0, 0));
+        }
+        .container2img {
+            position: relative;
+            /* object-fit: contain; */
+            top: 377px;
+            left: 459px;
+            filter: drop-shadow(1px 3px 80px rgb(255, 165, 0));
+        }
+
+        a {
+            color:white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-size: 15px;
+            color: lightgray;
+        }
+        
+        .container {
+            width: 100%;
+            height: 80vh;
+        }
+
+        .container-1 {
+            background-color: white;
+
+        }
+
+        .container-2 {
+            background-color: white;
+        }
+
+        .container-3 {
+            background-color: white;
+        }
+
+        .footer {
+            width: 100%;
+            height: 30vh;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <img class="navimg" src="./image/akumaicon.png" alt="icon"></image>
+        <div class="navtext"><a href="#container1">Akuma</a></div>
+        <div class="navtext"><a href="#container2">Feng Wei</a></div>
+        <div class="navtext"><a href="#container3">container3</a></div>
+        <div class="navtext"><a href="#footer">footer</a> </div>
+    </div>
+    <!-- 主打廣告 -->
+    <div id="container1" class="container container-1">
+        <img class="container1img" src="./image/akumfull.png" alt="icon"></image>
+    </div>
+    <!-- 輪播 -->
+    <div id="container2" class="container container-2">
+        <img class="container2img" src="./image/fengwei.png" alt="icon"></image>
+    </div>
+    <!-- 影片 -->
+    <div id="container3" class="container container-3">
+        container
+    </div>
+    <div id="footer" class="footer">
+        footer
+    </div>
+</body>
+
+</html>

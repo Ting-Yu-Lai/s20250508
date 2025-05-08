@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width, initial-sclae=1.0">
+    <title>Border pratice</title>
+    <style>
+        table {
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        table,
+        tr,
+        td {
+            border: 3px solid black;
+            height: 500px;
+
+        }
+
+        td {
+            width: 33%;
+            vertical-align: top;
+        }
+
+        .box {
+            background-color: lightcoral;
+            width: 294px;
+            height: 404px;
+            margin: auto;
+            text-align: center;
+            background-image: url(./image/one.png)
+        }
+
+        #box1 {
+            vertical-align: top;
+            /* width: 120px; */
+            /* background-color: aqua; */
+        }
+
+        .box2 {
+            vertical-align: middle;
+            width: 294px;
+            height: 404px;
+            background-image: url(./image/one.png);
+            background-position-x: 624px;
+        }
+        .box2-outside {
+            vertical-align: middle;
+            text-align: center;
+            /* width: 294px;
+            height: 404px;
+            background-image: url(./image/one.png);
+            background-position-x: 624px; */
+        }
+        .box3 {
+            vertical-align: bottom;
+        }
+
+        #table2 {
+            background-color: pink;
+        }
+        .table2-td {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td id="box1">
+                <div class="box">
+                    本業
+                </div>
+            </td>
+            <td class="box2-outside">
+                <div class="box2">
+                    香吉士
+                </div>
+            </td>
+            <td class="box3">
+                <div class="box">
+                    房地產
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table id="table2">
+        <tr>
+            <td class="table2-td">
+                <div class="box">
+                    本業
+                </div>
+            </td>
+            <td class="table2-td">
+                <div class="box">
+                    投資
+                </div>
+            </td>
+            <td class="table2-td">
+                <div class="box">
+                    房地產
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
