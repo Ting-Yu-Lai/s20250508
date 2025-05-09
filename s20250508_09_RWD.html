@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
     <style>
         * {
@@ -23,7 +24,8 @@
         .navtext {
             display: inline-block;
             /* background-color: rgb(54, 54, 54); */
-            border-radius: 15px;;
+            border-radius: 15px;
+            ;
             margin: 10px;
             height: 30px;
             width: 21%;
@@ -35,10 +37,10 @@
         .navimg {
             display: inline-block;
             position: relative;
-            height:40px;
-            width:45px;
-            top:13px;
-            left:20px;
+            height: 40px;
+            width: 45px;
+            top: 13px;
+            left: 20px;
             object-fit: contain;
             /* background-color:blue; */
             /* background-position-x: 10px;
@@ -49,19 +51,53 @@
         .container1img {
             position: relative;
             /* object-fit: contain; */
-            top: 38px;
-            filter: drop-shadow(1px 3px 80px rgb(139, 0, 0));
+            top: 28px;
+            left: 130px;
+            filter: drop-shadow(1px 3px 30px rgb(139, 0, 0));
+            animation: image1breathing-glow 3s infinite ease-in-out;
         }
+
+        #akuma-gif {
+            position: absolute;
+            top: 150px;
+            left: 23%;
+            width: 50%;
+        }
+
+        #fengwei-gif {
+            position: absolute;
+            top: 872px;
+            left: 23%;
+            width: 50%;
+        }
+
+        #MS-gif {
+            position: absolute;
+            top: 80%;
+            left: 23%;
+            width: 50%;
+        }
+
         .container2img {
             position: relative;
+            object-fit: contain;
+            top: 150px;
+            left: 695px;
+            filter: drop-shadow(1px 3px 80px rgb(131, 1, 1));
+            animation: image2breathing-glow 3s infinite ease-in-out;
+        }
+
+        .container3img {
+            position: relative;
             /* object-fit: contain; */
-            top: 377px;
-            left: 459px;
+            top: 319px;
+            left: -62px;
             filter: drop-shadow(1px 3px 80px rgb(255, 165, 0));
+            animation: image3breathing-glow 3s infinite ease-in-out;
         }
 
         a {
-            color:white;
+            color: white;
             text-decoration: none;
         }
 
@@ -69,7 +105,7 @@
             font-size: 15px;
             color: lightgray;
         }
-        
+
         .container {
             width: 100%;
             height: 80vh;
@@ -77,7 +113,6 @@
 
         .container-1 {
             background-color: white;
-
         }
 
         .container-2 {
@@ -90,8 +125,18 @@
 
         .footer {
             width: 100%;
-            height: 30vh;
-            background-color: lightyellow;
+            height: 33vh;
+            background-color: black;
+            position: relative;
+            top: 1003px;
+        }
+
+        .footertext {
+            color:white;
+        }
+
+        .footerakuma {
+            display:inline-block;
         }
     </style>
 </head>
@@ -101,24 +146,75 @@
         <img class="navimg" src="./image/akumaicon.png" alt="icon"></image>
         <div class="navtext"><a href="#container1">Akuma</a></div>
         <div class="navtext"><a href="#container2">Feng Wei</a></div>
-        <div class="navtext"><a href="#container3">container3</a></div>
+        <div class="navtext"><a href="#container3">Marshall Law</a></div>
         <div class="navtext"><a href="#footer">footer</a> </div>
     </div>
-    <!-- 主打廣告 -->
+
     <div id="container1" class="container container-1">
-        <img class="container1img" src="./image/akumfull.png" alt="icon"></image>
-    </div>
-    <!-- 輪播 -->
-    <div id="container2" class="container container-2">
-        <img class="container2img" src="./image/fengwei.png" alt="icon"></image>
-    </div>
-    <!-- 影片 -->
-    <div id="container3" class="container container-3">
-        container
-    </div>
-    <div id="footer" class="footer">
-        footer
-    </div>
+        <img id="akuma-still" class="container1img" src="./image/akumfull.png" alt="icon">
+        <img id="akuma-gif" src="./image/Akuma.gif" class="akuma-img" style="display: none;">
+
+        <div id="container2" class="container container-2">
+            <img id="fengwei-still" class="container2img" src="./image/Feng-Wei_new.webp" alt="icon">
+            <img id="fengwei-gif" src="./image/feng_wei.gif" class="fengwei-img" style="display: none;">
+        </div>
+
+        <div id="container3" class="container container-3">
+            <img class="container3img" src="./image/MarshallLaw.png" alt="icon" id="image-icon">
+        </div>
+
+        <div id="footer" class="footer">
+            <p class="footertext">Akuma各元件下載位置：</p>
+            <p><a href="http://iconbug.com/detail/icon/3960/akuma-street-fighter/">icon</a></p>
+            <p><a href="https://www.pngitem.com/middle/oRiwio_super-street-fighter-4-akuma-hd-png-download/">image</a>
+            </p>
+
+            <p ><a
+                    href="https://tenor.com/zh-TW/view/%E8%B1%AA%E9%AC%BC-%E4%B8%80%E7%9E%AC%E5%8D%83%E6%93%8A-gif-9283547829171292841">gif</a>
+            </p>
+            <p class="footertext">Feng Wei各元件下載位置：</p>
+            <p><a href="https://en.bandainamcoent.eu/tekken/tekken-8/characters/feng-wei">image</a>
+            </p>
+            <p><a href="https://www.fightersgeneration.com/characters/feng-wei-a6.html">gif</a>
+            </p>
+
+
+            <p class="footertext">Marshall LaW各元件下載位置：</p>
+            <p><a href="https://www.pikpng.com/pngvi/whoTxT_tekken-7-png-marshall-law-tekken-clipart/">image</a>
+            </p>
+            <p><a href="https://www.fightersgeneration.com/characters/feng-wei-a6.html">gif</a>
+            </p>
+
+        </div>
+        <script>
+            //akuma
+            const still = document.getElementById("akuma-still");
+            const gif = document.getElementById("akuma-gif");
+
+            still.addEventListener("mouseenter", () => {
+                still.style.display = "none";
+                gif.style.display = "block";
+            });
+
+            gif.addEventListener("mouseleave", () => {
+                gif.style.display = "none";
+                still.style.display = "block";
+            });
+
+            //fengwei的
+            const fg_still = document.getElementById("fengwei-still");
+            const fg_gif = document.getElementById("fengwei-gif");
+
+            fg_still.addEventListener("mouseenter", () => {
+                fg_still.style.display = "none";
+                fg_gif.style.display = "block";
+            });
+
+            fg_gif.addEventListener("mouseleave", () => {
+                fg_gif.style.display = "none";
+                fg_still.style.display = "block";
+            });
+        </script>
 </body>
 
 </html>
